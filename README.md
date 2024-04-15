@@ -27,7 +27,8 @@ Smart Zoom works on all modern browsers that support CSS3 transformations, inclu
 Contributions are welcome! Please fork the repository and submit pull requests with your enhancements. For bugs and feature requests, please use the [Issues](https://github.com/pengjeck/smartzoom/issues) section.
 
 ## Credits
-- zoom.js[https://github.com/hakimel/zoom.js]
+- wxt[https://github.com/wxt-dev/wxt]: Modern Web Extension Framework
+- zoom.js[https://github.com/hakimel/zoom.js]: zoom in on any element in the DOM
 
 ### for logo
 - remove background: https://www.remove.bg/zh
