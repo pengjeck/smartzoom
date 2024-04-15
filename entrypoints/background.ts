@@ -8,13 +8,9 @@ export default defineBackground(() => {
   })
 
   browser.contextMenus.onClicked.addListener((info, tab) => {
+    console.log("info", info)
     if (info.menuItemId === "zoomIn" && tab !== undefined && tab.id !== undefined) {
-      browser.tabs.query({ active: true, currentWindow: true }).then(function (tabs) {
-        if (tabs == undefined || tabs.length == 0 || tabs[0].id == undefined) return
-        console.log("send message to zoomIn")
-        browser.tabs.sendMessage(tabs[0].id, { action: "zoomIn" });
-      })
-
+      browser.tabs.sendMessage(tab.id, { action: "zoomIn", tmp: "123", targetElementId: info.targetElementId });
     }
   })
   console.log('Hello background!', { id: browser.runtime.id });
