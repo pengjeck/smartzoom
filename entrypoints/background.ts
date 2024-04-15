@@ -2,7 +2,7 @@ export default defineBackground(() => {
   browser.runtime.onInstalled.addListener(() => {
     browser.contextMenus.create({
       id: "zoomIn",
-      title: "放大",
+      title: "zoomIn",
       contexts: ['all']
     })
   })
