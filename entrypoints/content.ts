@@ -1,6 +1,14 @@
 export default defineContentScript({
-  matches: ['*://*.google.com/*'],
+  matches: ['<all_urls>'],
+
   main() {
-    console.log('Hello content.');
+    browser.runtime.onMessage.addListener(
+      function (request, sender, sendResponse) {
+        if (request.action === "zoomIn") {
+          document.body.style.transform = "scale(1.5)";
+          document.body.style.transformOrigin = "center";
+        }
+      }
+    );
   },
 });
