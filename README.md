@@ -27,24 +27,24 @@ Smart Zoom works on all modern browsers that support CSS3 transformations, inclu
 Contributions are welcome! Please fork the repository and submit pull requests with your enhancements. For bugs and feature requests, please use the [Issues](https://github.com/pengjeck/smartzoom/issues) section.
 
 ## Credits
-- (wxt)[https://github.com/wxt-dev/wxt]: Modern Web Extension Framework
-- (zoom.js)[https://github.com/hakimel/zoom.js]: zoom in on any element in the DOM
+- [wxt](https://github.com/wxt-dev/wxt): Modern Web Extension Framework
+- [zoom.js](https://github.com/hakimel/zoom.js): zoom in on any element in the DOM
 
 ### Tools when creating Logo
-- remove background: https://www.remove.bg/zh
-- png to svg: https://convertio.co/zh/png-svg/
+- [remove background](https://www.remove.bg/zh)
+- [png to svg](https://convertio.co/zh/png-svg/)
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details.
 
 ## Contect
-- (twitter)[https://twitter.com/pjwhusir]
-- (blog)[http://journeypeng.best/]
+- [twitter](https://twitter.com/pjwhusir)
+- [blog](http://journeypeng.best/)
 - email: pjwhusir@gmail.com
 
 ---
 
 Enjoy using Smart Zoom! Enhance your browsing experience with greater control and precision.
 
-> Part of the code is generate by (gpt4)[https://chat.openai.com/]
+> Part of the code is generate by [gpt4](https://chat.openai.com/)
