@@ -13,11 +13,11 @@ switch (env) {
   case 'pages':
     build.baseURL = '/astro-landing-page/'
     build.outDir = './docs'
-    build.siteURL = 'https://ttntm.github.io/astro-landing-page/'
+    build.siteURL = 'https://smartzoom.fun/astro-landing-page/'
     break
 
   case 'production':
-    build.siteURL = 'https://example.com/'
+    build.siteURL = 'https://smartzoom.fun/'
     break
 
   default:
