@@ -1,22 +1,22 @@
 [
   {
+    "title": "Protect your eyes",
+    "icon": "icon3.svg",
+    "content": "Don't squint at the dense text on web pages; it can make your eyes tired and dry. For the sake of your eyes, zoom in for a more comfortable view."
+  },
+  {
     "title": "Zoom Smooth",
     "icon": "icon1.svg",
-    "content": ""
+    "content": "You can smoothly zoom in on any area of a webpage. For this, we've implemented dynamic zoom effects that smoothly magnify the selected area within 400 milliseconds."
   },
   {
     "title": "No touchpad",
     "icon": "icon2.svg",
-    "content": ""
+    "content": "Close your Mac; you don't need a touchpad. You can easily achieve SmartZoom with just a mouse."
   },
   {
-    "title": "Zoom anything",
-    "icon": "icon3.svg",
-    "content": ""
-  },
-  {
-    "title": "Keep layout",
+    "title": "Maintains layout",
     "icon": "icon4.svg",
-    "content": ""
+    "content": "Maintains the original page layout without changing the positions of elements, making browsing more natural."
   }
 ]

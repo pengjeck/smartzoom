@@ -1,39 +1,56 @@
 ---
-import Navbar from '../Navbar.astro'
+import Navbar from "../Navbar.astro";
 
-const headerListItems = [
-  'Cool Feature',
-  'Another Feature',
-  'Something Else',
-  'Why Not',
-  'Rotating',
-  'List',
-  'Items Here'
-]
-const site = Astro.site
+const headerListItems = ["Smart", "Smooth", "Simple", "Accessible"];
+
+const chromeWebStroeURl =
+  "https://chromewebstore.google.com/detail/smartzoom/poeilnadcbkniibomfajbnemgekfeaak";
+const site = Astro.site;
 ---
+
 <header class="header w-full min-h-screen flex flex-col justify-between">
   <Navbar />
   <div class="flex flex-col justify-center h-full py-12">
-    <div class="self-center items-center flex flex-col sm:flex-row w-full md:w-5/6 xl:w-2/3 px-4 sm:px-0">
+    <div
+      class="self-center items-center flex flex-col sm:flex-row w-full md:w-5/6 xl:w-2/3 px-4 sm:px-0 pb-40"
+    >
       <div class="w-full text-center sm:text-left sm:w-1/2 py-12 sm:px-8">
         <h1 class="tracking-wide text-purple-600 text-2xl mb-6">
-          New Thing: <span class="text-gray-800 font-bold tracking tracking-widest">AWE.SOME</span>
+          New Thing: <span
+            class="text-gray-800 font-bold tracking tracking-widest"
+            >SmartZoom</span
+          >
         </h1>
         <h2 class="font-bold tracking-widest text-4xl">
-          Intro goes here...
+          Zoom any content on the web
         </h2>
-        <span class="content__container block font-light text-browngray text-2xl my-6">
+        <span
+          class="content__container block font-light text-browngray text-2xl my-6"
+        >
           <ul class="content__container__list">
-            {headerListItems.map((item) => <li class="content__container__list__item xl:pl-3">{item}</li>)}
+            {
+              headerListItems.map((item) => (
+                <li class="content__container__list__item xl:pl-3">{item}</li>
+              ))
+            }
           </ul>
         </span>
-        <p class="font-bold tracking-widest text-4xl">...think about it!</p>
+        <p class="font-bold tracking-widest text-4xl">Without touchpad!</p>
       </div>
       <div class="w-full sm:w-1/2">
-        <img src={`${site}img/undraw_Friends_online_re_r7pq.svg`} alt="AWE.SOME header">
+        <img
+          src={`${site}img/undraw_Friends_online_re_r7pq.svg`}
+          alt="AWE.SOME header"
+        />
       </div>
     </div>
+    <div class="text-center">
+      <a
+        href={chromeWebStroeURl}
+        class="text-gray-1000 font-bold bg-purple-400 hover:text-white text-2xl text-center w-25 no-underline py-3 px-3 rounded-lg"
+        target="_blank"
+        rel="noopener">Install on Chrome Web Store</a
+      >
+    </div>
   </div>
-
 </header>
