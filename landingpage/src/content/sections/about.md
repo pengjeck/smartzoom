@@ -1,5 +1,5 @@
 ---
-title: AWE.SOME Heading
+title: SmartZoom —— Without Touchpad
 type: about
 ---
 

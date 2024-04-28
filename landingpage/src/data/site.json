@@ -1,16 +1,16 @@
 {
-  "author": "AWE.SOME",
-  "description": "AWE.SOME - An Astro Landing Page Template",
-  "title": "🚀 AWE.SOME - An Astro Landing Page Template",
+  "author": "JourneyPeng",
+  "description": "Smartzoom a webextension to zooming anywhere of website",
+  "title": "🚀 SmartZoom - Zoom anywhere to pretect your eye.",
   "language": "en",
   "social": [
     {
       "title": "Twitter",
-      "url": "https://twitter.com/#"
+      "url": "https://twitter.com/pjwhusir"
     },
     {
-      "title": "LinkedIn",
-      "url": "https://linkedin.com/company/#"
+      "title": "Blog",
+      "url": "https://journeypeng.best"
     }
   ]
 }
