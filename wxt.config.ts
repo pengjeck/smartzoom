@@ -9,7 +9,7 @@ export default defineConfig({
     description: "SmartZoom without touchpad",
     default_locale: "en",
     author: "JackPen",
-    permissions: ['contextMenus', 'activeTab']
+    permissions: []
   },
   vite: () => ({
     plugins: [react()],

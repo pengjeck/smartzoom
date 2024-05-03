@@ -1,6 +1,6 @@
 # Smart Zoom Extension
 
-Smart Zoom is a lightweight browser extension that allows users to zoom in on specific parts of a webpage without the need for a touchpad. It's ideal for users who rely on a mouse or other non-touch interfaces and need precise control over zoom and pan behaviors.
+[Smart Zoom](https://smartzoom.fun) is a lightweight browser extension that allows users to zoom in on specific parts of a webpage without the need for a touchpad. It's ideal for users who rely on a mouse or other non-touch interfaces and need precise control over zoom and pan behaviors.
 
 ## Features
 
@@ -15,7 +15,7 @@ Smart Zoom is a lightweight browser extension that allows users to zoom in on sp
 
 ## Usage
 
-- Right-click on the area you want to magnify and click "zoomIn" to enlarge; 
+- Hover on the area you want to magnify and press key `z` to enlarge;
 - press key `Esc` to exit magnification.
 
 ## Compatibility
