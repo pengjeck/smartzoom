@@ -5,9 +5,10 @@ export default defineContentScript({
   main() {
     const zoom_op = zoom(document)
 
-    let zoomed = function () {
+    let zoomed = () => {
       return Math.abs(zoom_op.zoomLevel() - 1) > 0.001
     };
+
     let lastRightClickedElement: EventTarget | null = null;
     document.addEventListener('contextmenu', function (event) {
       lastRightClickedElement = event.target;
@@ -17,21 +18,26 @@ export default defineContentScript({
       lastRightClickedElement = event.target;
     })
 
+    browser.runtime.onMessage.addListener(
+      function (request, sender, sendResponse) {
+        console.log(request)
+        if (request.action === "zoomIn" && lastRightClickedElement) {
+          if (lastRightClickedElement && lastRightClickedElement instanceof HTMLElement) {
+            zoom_op.to({
+              element: lastRightClickedElement,
+            })
+          } else {
+            console.error("No valid element selected")
+          }
+        }
+      }
+    );
+
     document.addEventListener('keyup', function (event) {
       console.log("keypress key=", event.key, "zoomed=", zoomed())
       if (zoomed() && event.key === 'Escape') {
         zoom_op.out({})
         event.stopImmediatePropagation();
-      }
-
-      if (zoomed() == false && event.key === 'z') {
-        if (lastRightClickedElement && lastRightClickedElement instanceof HTMLElement) {
-          zoom_op.to({
-            element: lastRightClickedElement,
-          })
-        } else {
-          console.error("No valid element selected")
-        }
       }
     })
 

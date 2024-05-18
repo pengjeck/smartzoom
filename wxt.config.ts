@@ -8,8 +8,17 @@ export default defineConfig({
     name: "SmartZoom",
     description: "SmartZoom without touchpad",
     default_locale: "en",
-    author: "JackPen",
-    permissions: []
+    author: "JourneyPeng",
+    permissions: [],
+    commands: {
+      "zoomAction": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+Z",
+          "mac": "Command+Shift+Z"
+        },
+        "description": "Trigger zoom in"
+      }
+    }
   },
   vite: () => ({
     plugins: [react()],
